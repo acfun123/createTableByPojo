@@ -1,0 +1,29 @@
+#服务配置
+server:
+  port: 8080
+
+spring:
+  #数据库配置
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ncc
+    #阿里druid连接池驱动配置信息
+    type: com.alibaba.druid.pool.DruidDataSource
+    #连接池的配置信息
+    druid:
+      #初始化大小，最小，最大
+      initial-size: 2
+
+#A.CTable配置
+mybatis:
+  #自动更新表
+  table:
+    auto: true
+  #实体类扫描地址
+  model:
+    pack: com.example.demo.entity
+  #数据库类型
+  database:
+    type: mysql
