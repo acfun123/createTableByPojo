@@ -1,0 +1,3 @@
+# createTableByPojo
+通过实体类创建数据库表
+基于springboot和mybatis实现的通过实体类创建数据库表
